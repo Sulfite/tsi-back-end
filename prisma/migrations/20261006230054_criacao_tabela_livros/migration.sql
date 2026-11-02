@@ -1,0 +1,12 @@
+-- CreateTable
+CREATE TABLE `Livros` (
+    `ID_Livro` INTEGER NOT NULL AUTO_INCREMENT,
+    `QTD_Paginas` INTEGER NOT NULL,
+    `Autor` VARCHAR(191) NOT NULL,
+    `Editora` VARCHAR(191) NOT NULL,
+    `ISBN` VARCHAR(191) NOT NULL,
+    `Titulo` VARCHAR(191) NOT NULL,
+
+    UNIQUE INDEX `Livros_ISBN_key`(`ISBN`),
+    PRIMARY KEY (`ID_Livro`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
